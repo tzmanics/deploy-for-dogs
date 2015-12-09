@@ -1,75 +1,88 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title>Deploy for Dogs</title>
     <meta charset="utf-8">
     <style>
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-      body { font-family: 'Ubuntu Mono'; }
-      .remark-slide-content { background-color: black; color: white; }
-      img { width: 50%; float: right;  }
+      @import url(https://fonts.googleapis.com/css?family=Roboto:100);
+      body { font-family: 'Roboto'; font-weight: 100; text-align: left; }
+      img { float: right; }
+      a { font-size: 55%; text-decoration: none; }
+      .remark-slide-content h1 { font-size: 400%; font-weight: 100; webkit-margin-after: 0; }
+      .remark-container, .remark-slide-content { padding: 0; background-color: #d7d8d2 }
+      .remark-slide-number { display: none; }
+      .title-image img { width: 75%; }
+      .left-block { width: 45%; float: left; }
+      .left-block img { width: 100%; padding-top: 40%; float: left; }
+      .right-block img { width: 55%; margin-top: -30px; }
+      .non-code { font-size: 300%; }
+      .code { font-family: 'Courier New'; font-size: 150%; }
+      .info-slide { padding: 5%; }
+      .info-slide img { width:55%; }
     </style>
   </head>
   <body>
     <textarea id="source">
 
-class: center, center
 
-![toshi-igotthis](images/toshi-igotthis.gif)
-# DEPLOY FOR DOGS
-
----
-
-![toshi-angry](images/toshi-angry.gif)
+# deploy for dogs
+.title-image[![toshi-igotthis](images/toshi-igotthis.gif)]
 
 ---
 
-![modulus=cli](images/modulus-cli.png)
+.left-block[.non-code[deploying shouldn't be complicated]]
+.right-block[![toshi-angry](images/toshi-angry.gif)]
 
 ---
 
+class: left, middle
+
+.code[
 - npm i modulus -g
 - modulus signup
 - modulus create project
 - modulus deploy
-- modulus scale
+]
 
 ---
 
-npm i modulus -g
-![toshi-install](images/toshi-01.gif)
+.left-block[![npm-install](images/install.png)]
+.right-block[![toshi-install](images/toshi-01.gif)]
 
 ---
 
-npm signup
-![toshi-signup](images/toshi-02.gif)
+.left-block[![modulus-signup](images/signup.png)]
+.right-block[![toshi-signup](images/toshi-02.gif)]
 
 ---
 
-modulus create project "toshis-pawject"
-![toshi-create](images/toshi-03.gif)
+.left-block[![modulus-create](images/create.png)]
+.right-block[![toshi-create](images/toshi-03.gif)]
 
 ---
 
-modulus deploy
-![toshi-deploy](images/toshi-snack.gif)
+.left-block[![modulus-deploy](images/deploy.png)]
+.right-block[![toshi-deploy](images/toshi-04.gif)]
 
 ---
 
-modulus scale aws.us-east-1a=1 joyent.us-east-1=1
-![toshi-scale](images/toshi-04.gif)
+background-image: url(./images/modulus-cli.png)
 
 ---
+class: info-slide
+.non-code[Tara Z. Manicsic
 
-![toshi-bark](images/toshi-bark.gif)
-
----
-
-![modulus-logo](images/modulus-logo.png)
-Tara Z. Manicsic
 @tzmanics
 
-slides: [slide link](slide link)
+slides: [https://github.com/tzmanics/deploy-for-dogs](https://github.com/tzmanics/deploy-for-dogs)
+]
+
+![modulus-logo](images/modulus-logo.png)
+
+---
+
+.left-block[.non-code[Thank you!]]
+.right-block[![toshi-bark](images/toshi-bark.gif)]
 
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
